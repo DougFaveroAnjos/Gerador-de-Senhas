@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.logo{
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+main{
+    background: url(/img/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.cartao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+
+.gerador{
+    font-size: 15px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    border-radius: 20px;
+    background-color: #dfdfdf;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btnGerar{
+    background: linear-gradient(315deg, rgba(255, 255, 255, 0.158), rgba(255, 255, 255, 0));
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: .1s;
+    font-weight: bold;
+    border: 1px solid #313131;
+    cursor: pointer;
+}
+
+.btnGerar:active{
+    scale: 90%;
+}
+
+/*Painel das Senhas*/
+.senhaPanel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 14px 0;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.senha{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #313131;
+    transition: .3s;
+}
+
+.senha:hover{
+    scale: 105%;
+}
+
+.copiar{
+    font-size: 15px;
+    visibility: hidden;
+    margin-bottom: 15px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.senhaPanel:hover .copiar{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.copiado{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 15px;
+    cursor: auto;
+}
+
+.hideCopy{
+    display: none;
+}
+
+
